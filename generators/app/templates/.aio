@@ -1,0 +1,23 @@
+{
+  "project": {
+    "id": "4566206088344745372",
+    "name": "RuntimeNextJS",
+    "title": "Runtime NextJS",
+    "org": {
+      "id": "53444",
+      "name": "Adobe IO",
+      "ims_org_id": "BA3E5257595416580A495C6D@AdobeOrg"
+    },
+    "workspace": {
+      "id": "4566206088344749210",
+      "name": "Production",
+      "title": "Production",
+      "action_url": "https://53444-runtimenextjs.adobeioruntime.net",
+      "app_url": "https://53444-runtimenextjs.adobeio-static.net",
+      "details": {
+        "credentials": [],
+        "services": []
+      }
+    }
+  }
+}

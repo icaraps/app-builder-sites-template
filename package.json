@@ -1,0 +1,8 @@
+{
+  "name": "app-builder-sites-template",
+  "version": "0.0.1",
+  "description": "App Builder - AEM Sites template",
+  "dependencies": {
+    "yeoman-generator": "^5.6.1"
+  }
+}
