@@ -12,7 +12,10 @@ module.exports = {
   env: {
     NAME: '<%= NAME %>',
     AEM_SERVER: '<%= AEM_SERVER %>',
+    AEM_ROOT_PAGE: '<%= AEM_ROOT_PAGE %>',
     AEM_GRAPHQL_ENDPOINT: '<%= AEM_GRAPHQL_ENDPOINT %>',
+    AEM_USERNAME: '<%= AEM_USERNAME %>',
+    AEM_PASSWORD: '<%= AEM_PASSWORD %>',
     MAGENTO_GRAPHQL: '<%= MAGENTO_GRAPHQL %>'
   },
   // Required for serverless
