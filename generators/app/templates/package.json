@@ -9,7 +9,7 @@
     "rt:zip": "node scripts/zip",
     "rt:build": "npm run rt:clean && npm run rt:dependencies && npm run rt:prepare && npm  run rt:zip",
     "rt:deploy": "aio app deploy --no-actions --no-build && aio app deploy --no-web-assets --no-build",
-    "go": "npm run build && npm run rt:build && npm run rt:deploy"
+    "deploy": "npm run build && npm run rt:build && npm run rt:deploy"
   },
   "dependencies": {
     "@adobe/aem-headless-client-js": "^3.1.1",
