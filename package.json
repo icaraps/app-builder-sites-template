@@ -1,5 +1,5 @@
 {
-  "name": "app-builder-sites-template",
+  "name": "generator-app-builder-sites-template",
   "version": "0.0.1",
   "description": "App Builder - AEM Sites template",
   "dependencies": {

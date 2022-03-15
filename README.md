@@ -6,5 +6,5 @@
 * Run `npm install` and `npm link` in the root of this project.
 * In another folder, generate a project using the following command:
     ```
-    yo content-commerce
+    yo app-builder-sites-template
     ```
