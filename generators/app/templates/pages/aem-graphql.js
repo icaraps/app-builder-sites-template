@@ -24,8 +24,8 @@ export default ({adventures, ASSETS_SERVER}) => {
 }
 
 export async function getServerSideProps() {
-  const serviceURL = `https://${process.env.AEM_SERVER}`;
-  const endpoint = process.env.AEM_GRAPHQL_ENDPOINT;
+  const serviceURL = process.env.AEM_HOST;
+  const endpoint = process.env.AEM_GRAPHQL;
   const GQLServer = `${serviceURL}${endpoint}`;
   
   const aemHeadlessClient = new AEMHeadless({
