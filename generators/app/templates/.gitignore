@@ -3,5 +3,6 @@ node_modules
 *.log
 .vercel
 .env
+.aio
 dist
 .aws.tmp.creds.json

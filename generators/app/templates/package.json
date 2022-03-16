@@ -1,5 +1,5 @@
 {
-  "name": "<%= NAME %>",
+  "name": "<%= APP_NAME %>",
   "scripts": {
     "dev": "next dev",
     "build": "cross-env NODE_ENV=production next build",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@adobe/aio-lib-runtime": "^3.4.0",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0"
   }
 }

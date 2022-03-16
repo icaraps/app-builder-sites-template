@@ -1,4 +1,4 @@
-application:
+<%= APP_NAME %>:
   actions: actions
   web: pages
   runtimeManifest:
