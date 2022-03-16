@@ -9,7 +9,7 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'APP_NAME',
-                message: 'Sites app name',
+                message: 'App name',
                 default: path.basename(process.cwd())
             },
             {
@@ -34,7 +34,7 @@ module.exports = class extends Generator {
 
     writing() {
         const props = {
-            NAME: this.answers.APP_NAME,
+            APP_NAME: this.answers.APP_NAME,
             AEM_HOST: this.answers.AEM_HOST,
             AEM_GRAPHQL: this.answers.AEM_GRAPHQL,
             MAGENTO_GRAPHQL: this.answers.MAGENTO_GRAPHQL
