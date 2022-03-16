@@ -16,3 +16,8 @@ Try the demo live here: [**https://53444-runtimenextjs.adobeioruntime.net/api/v1
 1. `npm run build`
 2. `npm run rt:build`
 3. `npm run rt:deploy`
+
+### Configure AEM to use your SPA
+
+1. Set remote page url property on your AEM root page.
+    `aio aem:spa-set-root -h <%= AEM_SERVER %> /content/wknd/us/en`

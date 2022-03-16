@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@adobe/aio-lib-runtime": "^3.4.0",
-    "axios": "^0.26.1",
     "cross-env": "^7.0.3"
   }
 }

@@ -24,25 +24,6 @@ module.exports = class extends Generator {
             },
             {
                 type: 'input',
-                name: 'AEM_ROOT_PAGE',
-                message: 'Set the AEM root page',
-                default: '/content/wknd/us/en'
-            },
-            {
-                type: 'input',
-                name: 'AEM_USERNAME',
-                message: 'Set the AEM user name',
-                default: 'admin'
-            },
-            {
-                type: 'password',
-                name: 'AEM_PASSWORD',
-                mask: '*',
-                message: 'Set the AEM user password',
-                default: 'admin'
-            },
-            {
-                type: 'input',
                 name: 'MAGENTO_GRAPHQL',
                 message: 'Set Magento GraphQL endpoint (e.g. http://magento:8080/graphql)',
             }
@@ -54,10 +35,7 @@ module.exports = class extends Generator {
             NAME: this.answers.NAME,
             AEM_SERVER: this.answers.AEM_SERVER,
             AEM_GRAPHQL_ENDPOINT: this.answers.AEM_GRAPHQL_ENDPOINT,
-            MAGENTO_GRAPHQL: this.answers.MAGENTO_GRAPHQL,
-            AEM_ROOT_PAGE: this.answers.AEM_ROOT_PAGE,
-            AEM_USERNAME: this.answers.AEM_USERNAME,
-            AEM_PASSWORD: this.answers.AEM_PASSWORD
+            MAGENTO_GRAPHQL: this.answers.MAGENTO_GRAPHQL
         };
 
         this.log('template props', JSON.stringify(props, null, 2));
