@@ -5,7 +5,7 @@
     "build": "cross-env NODE_ENV=production next build",
     "rt:clean": "rm -rf dist/application && mkdir -p dist/application/actions/pages-temp && mkdir -p dist/application/web-prod/_next",
     "rt:dependencies": "cd runtime && npm i",
-    "rt:prepare": "cp -r .next/standalone/* dist/application/actions/pages-temp/ && cp -r .next/standalone/.next dist/application/actions/pages-temp/.next && cp -r runtime/node_modules/* dist/application/actions/pages-temp/node_modules && cp runtime/index.js dist/application/actions/pages-temp/ && cp -r public/ dist/application/web-prod/ && cp -r .next/static dist/application/web-prod/_next/static && rm dist/application/actions/pages-temp/server.js",
+    "rt:prepare": "cp -r .next/standalone/* dist/application/actions/pages-temp/ && cp -r .next/standalone/.next dist/application/actions/pages-temp/.next && cp -r runtime/node_modules/* dist/application/actions/pages-temp/node_modules && cp runtime/index.js dist/application/actions/pages-temp/ && node scripts/copy-env && cp -r public/ dist/application/web-prod/ && cp -r .next/static dist/application/web-prod/_next/static && rm dist/application/actions/pages-temp/server.js",
     "rt:zip": "node scripts/zip",
     "rt:build": "npm run rt:clean && npm run rt:dependencies && npm run rt:prepare && npm  run rt:zip",
     "rt:deploy": "aio app deploy --no-actions --no-build && aio app deploy --no-web-assets --no-build",
