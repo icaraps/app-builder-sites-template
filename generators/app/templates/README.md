@@ -1,6 +1,4 @@
-# Next.js 12 on Runtime
-
-Try the demo live here: [**https://53444-runtimenextjs.adobeioruntime.net/api/v1/web/actions/pages**](https://53444-runtimenextjs.adobeioruntime.net/api/v1/web/actions/pages).
+# <%= APP_NAME %>
 
 ### Install dependencies
 
@@ -20,4 +18,4 @@ Try the demo live here: [**https://53444-runtimenextjs.adobeioruntime.net/api/v1
 ### Configure AEM to use your SPA
 
 1. Set remote page url property on your AEM root page.
-    `aio aem:spa-set-root -h <%= AEM_SERVER %> /content/wknd/us/en`
+    `aio aem:spa-set-root -h <%= AEM_HOST %> /content/wknd/us/en`
