@@ -2,7 +2,7 @@ import Link from 'components/Link'
 
 export default () => (
   <>
-    <h1>Index {process.env.NAME}</h1>
+    <h1>Index {process.env.APP_NAME}</h1>
   
     List of all demos
   
