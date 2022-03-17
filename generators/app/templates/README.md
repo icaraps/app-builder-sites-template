@@ -18,4 +18,18 @@
 ### Configure AEM to use your SPA
 
 1. Set remote page url property on your AEM root page.
-    `aio aem:spa-set-root -h <%= AEM_HOST %> /content/wknd/us/en`
+    ```bash
+    # Store your IMS token in the IMS_TOKEN environment variable
+    export IMS_TOKEN=<your-ims-token>
+
+    aio aem:spa-set-root -h <%= AEM_HOST %> -s 1.5 /content/wknd/us/en
+    ```
+
+2. Set Cloudmanager variable to configure CORS for your AEM project.
+    ```bash
+    # Select the org of your AEMaaCS instance
+    aio cloudmanager:org:select
+
+    # Provide program and environment Id of your AEMaaCS instance
+    aio aem:spa:set-cors -p programId environmentId
+    ```

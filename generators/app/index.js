@@ -49,4 +49,19 @@ module.exports = class extends Generator {
             props
         );
     }
+
+    install() {
+        // Ensure the cloudmanager and aem aio CLI plugins are installed
+        const { stdout } = this.spawnCommandSync('aio', ['plugins'], { encoding: 'utf-8', stdio: [process.stderr] });
+
+        if (!stdout.includes('@adobe/aio-cli-plugin-aem')) {
+            this.log('Install Adobe I/O CLI AEM Plugin');
+            this.spawnCommandSync('aio', ['plugins:install', '@adobe/aio-cli-plugin-aem']);
+        }
+
+        if (!stdout.includes('@adobe/aio-cli-plugin-cloudmanager')) {
+            this.log('Install Adobe I/O CLI Cloud Manager Plugin');
+            this.spawnCommandSync('aio', ['plugins:install', '@adobe/aio-cli-plugin-cloudmanager']);
+        }
+    }
 };
