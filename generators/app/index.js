@@ -25,11 +25,11 @@ module.exports = class extends Generator {
                 default: '/content/_cq_graphql/global/endpoint.json',
                 dependsOn: ['AEM_HOST'],
             },
-            {
-                type: 'input',
-                name: 'MAGENTO_GRAPHQL',
-                message: 'Magento GraphQL endpoint (e.g. http://magento:8080/graphql)',
-            }
+            // {
+            //     type: 'input',
+            //     name: 'MAGENTO_GRAPHQL',
+            //     message: 'Magento GraphQL endpoint (e.g. http://magento:8080/graphql)',
+            // }
         ]);
     }
 
@@ -41,7 +41,7 @@ module.exports = class extends Generator {
             MAGENTO_GRAPHQL: this.answers.MAGENTO_GRAPHQL
         };
 
-        this.log('template props', JSON.stringify(props, null, 2));
+        // this.log('template props', JSON.stringify(props, null, 2));
 
         this.sourceRoot(path.join(__dirname, './templates/'));
         this.fs.copyTpl(
