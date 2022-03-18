@@ -13,8 +13,7 @@ module.exports = {
   env: {
     APP_NAME: '<%= APP_NAME %>',
     AEM_HOST: '<%= AEM_HOST %>',
-    AEM_GRAPHQL: '<%= AEM_GRAPHQL %>',
-    // MAGENTO_GRAPHQL: '<%= MAGENTO_GRAPHQL %>'
+    AEM_GRAPHQL: '<%= AEM_GRAPHQL %>'
   },
   // Required for serverless
   experimental: {
