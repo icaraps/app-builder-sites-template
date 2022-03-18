@@ -15,7 +15,8 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'AEM_HOST',
-                message: 'AEM instance URL (e.g. https://author.adobeaemcloud.com)'
+                message: 'AEM instance URL',
+                default: 'https://wknd.site',
             },
             {
                 type: 'input',
