@@ -38,7 +38,7 @@ module.exports = class extends Generator {
             APP_NAME: this.answers.APP_NAME,
             AEM_HOST: this.answers.AEM_HOST,
             AEM_GRAPHQL: this.answers.AEM_GRAPHQL,
-            MAGENTO_GRAPHQL: this.answers.MAGENTO_GRAPHQL
+            // MAGENTO_GRAPHQL: this.answers.MAGENTO_GRAPHQL
         };
 
         // this.log('template props', JSON.stringify(props, null, 2));
